@@ -1,0 +1,43 @@
+import math
+
+while True:
+  a = 0
+  
+  def calculator():
+   num1 = float(input("num1:"))
+   operator = input("operator:")
+   num2 = float()
+   if operator in ["+", "-", "*", "/", "^", "sqrt"]:
+    num2 = float(input("num2:"))
+   if operator == "+":
+    result = num1 + num2
+   elif operator == "-":
+     result = num1 + num2
+   elif operator == "*":
+     result = num1 * num2
+   elif operator == "/":
+     result = num1 / num2
+   elif operator == "^":
+     result = num1 ** num2
+   elif operator == "sqrt":
+     result = math.sqrt(num1)
+   elif operator == "sin":
+     result = math.sin(num1)
+   elif operator == "cos":
+     result = math.cos(num1)
+   elif operator == "tan":
+     result = math.tan(num1)
+   elif operator == "log":
+     result = math.log(num1)
+   else:
+     print("wrong operator")
+     return 
+   result_str = str(result).rstrip("0").rstrip(".")
+   print(result_str)
+   if result != 0:
+       a = 0
+   
+
+   
+   
+  calculator()
